@@ -2,7 +2,7 @@
 
 Version: 1.0.6
 
-Thymer Clipboard Parser is a global Thymer app plugin for quickly creating Thymer pages from clipboard content. It can clip plain text, rich HTML, and images, run saved parser profiles with preview, then opens the new page after saving.
+Thymer Clipboard Parser is a global Thymer app plugin for quickly creating Thymer pages from clipboard content. It can capture plain text, HTML, and images. Create and run saved parser profiles with preview, then open the new page after saving in Thymer.
 
 ## Commands
 
