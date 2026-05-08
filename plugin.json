@@ -1,0 +1,87 @@
+{
+  "ver": 1,
+  "version": "1.0.6",
+  "name": "Clipboard Parser",
+  "icon": "clipboard-text",
+  "description": "Global: create records from clipboard, run saved parser profiles with preview, and manage Clipboard Parser settings. Optional custom.target_collection_name and custom.parser_profiles in JSON.",
+  "custom": {
+    "target_collection_name": "",
+    "parser_profiles": [
+      {
+        "name": "r/F45 Intel Week",
+        "mode": "weekdaySections",
+        "parentTitle": "",
+        "parentTitlePrefix": "r/F45 Intel Week",
+        "parentPageName": "r/F45",
+        "tag": "#wellness",
+        "childTitle": "{heading}",
+        "childBody": "{heading}\n{body}",
+        "createParentLinks": true,
+        "stripBlankLines": true
+      },
+      {
+        "name": "Sample One Page Note",
+        "mode": "onePage",
+        "parentTitle": "Sample Clipboard Note",
+        "parentTitlePrefix": "Clipboard Week",
+        "parentPageName": "",
+        "tag": "#inbox",
+        "childTitle": "{heading}",
+        "childBody": "{heading}\n{body}",
+        "createParentLinks": true,
+        "stripBlankLines": false
+      },
+      {
+        "name": "Example Delimiter Sections",
+        "mode": "delimiterSections",
+        "parentTitle": "Example Split Notes",
+        "parentTitlePrefix": "Clipboard Week",
+        "delimiter": "---",
+        "parentPageName": "",
+        "tag": "#notes",
+        "childTitle": "Example {index}: {heading}",
+        "childBody": "{body}",
+        "createParentLinks": true,
+        "stripBlankLines": false
+      },
+      {
+        "name": "Sample Weekly Plan",
+        "mode": "weekdaySections",
+        "parentTitle": "",
+        "parentTitlePrefix": "Sample Weekly Plan",
+        "parentPageName": "",
+        "tag": "#planning",
+        "childTitle": "{day}: {heading}",
+        "childBody": "{heading}\n\n{body}",
+        "createParentLinks": true,
+        "stripBlankLines": false
+      },
+      {
+        "name": "Example Markdown Headings",
+        "mode": "regexSections",
+        "parentTitle": "Example Markdown Import",
+        "parentTitlePrefix": "Clipboard Week",
+        "sectionStartRegex": "^#{1,6}\\s+(.+)$",
+        "parentPageName": "",
+        "tag": "#import",
+        "childTitle": "{heading}",
+        "childBody": "{body}",
+        "createParentLinks": true,
+        "stripBlankLines": false
+      },
+      {
+        "name": "Sample Numbered List Sections",
+        "mode": "regexSections",
+        "parentTitle": "Sample Numbered Outline",
+        "parentTitlePrefix": "Clipboard Week",
+        "sectionStartRegex": "^\\s*\\d+[.)]\\s+(.+)$",
+        "parentPageName": "",
+        "tag": "#outline",
+        "childTitle": "{index}. {heading}",
+        "childBody": "{heading}\n{body}",
+        "createParentLinks": true,
+        "stripBlankLines": false
+      }
+    ]
+  }
+}
